@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Select Menu Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="selector">
+        <div id="selectField">
+          <p id="selectText">Select Social Media</p>
+          <img src="down-arrow.png" />
+        </div>
+        <ul id="list">
+          <li class="options">
+            <img src="facebook.png" />
+            <p>Facebook</p>
+          </li>
+          <li class="options">
+            <img src="youtube.png" />
+            <p>Youtube</p>
+          </li>
+          <li class="options">
+            <img src="whatsapp.png" />
+            <p>Whatsapp</p>
+          </li>
+          <li class="options">
+            <img src="twitter.png" />
+            <p>Twitter</p>
+          </li>
+          <li class="options">
+            <img src="instagram.png" />
+            <p>Instagram</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      var selectedField = document.getElementById("selectField");
+      var selectedText = document.getElementById("selectText");
+      var options = document.getElementByClassName("options");
+
+      for (option of options) {
+        option.onclick = function () {
+          selectText.innerHTML = this.textContent;
+        };
+      }
+    </script>
+  </body>
+</html>
